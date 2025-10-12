@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 8 - Relation dan Many-to-Many dalam ERD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>BASIC DATA</h1>
+</header>
+
+<main>
+    <h2>Post 8: Apa itu Relation pada ERD, Mengapa Many-to-Many tidak baik digunakan</h2>
+
+    <p><strong>Relation</strong> atau <em>relasi</em> dalam ERD adalah hubungan antar entitas yang menggambarkan 
+    bagaimana satu entitas berhubungan dengan entitas lain. Setiap relasi biasanya ditunjukkan dengan garis yang 
+    menghubungkan dua entitas.</p>
+
+    <p><u>Contoh jenis relasi:</u></p>
+    <ul>
+        <li>One to One (1:1): Satu entitas hanya berhubungan dengan satu entitas lain.</li>
+        <li>One to Many (1:N): Satu entitas dapat berhubungan dengan banyak entitas lain.</li>
+        <li>Many to Many (M:N): Banyak entitas berhubungan dengan banyak entitas lain.</li>
+    </ul>
+
+    <h3>Mengapa Many-to-Many tidak baik digunakan?</h3>
+    <p>
+        Relasi <strong>Many-to-Many (M:N)</strong> tidak direkomendasikan langsung pada implementasi database 
+        karena menyebabkan duplikasi data dan sulit diatur dalam sistem relasional.
+    </p>
+
+    <p>Oleh karena itu, relasi M:N harus diubah menjadi dua relasi <strong>One-to-Many (1:N)</strong> dengan 
+    menambahkan tabel perantara (tabel relasi).</p>
+
+    <p><u>Contoh:</u></p>
+    <p>Relasi antara Mahasiswa dan Mata Kuliah (M:N) diubah menjadi:</p>
+    <ul>
+        <li>Mahasiswa — mengambil → KRS</li>
+        <li>KRS — berisi → Mata Kuliah</li>
+    </ul>
+
+    <p>
+        <a href="post7.html">← Previous</a> |
+        <a href="index.html" class="back">Kembali ke Beranda</a>
+    </p>
+</main>
+
+<footer>
+    <p>Diposting oleh Stefanus Krisna • 13 Oktober 2025</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 6 - Attribute, Entitas, dan Relasi dalam ERD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BASIC DATA</h1>
+    </header>
+
+    <main>
+        <h2>Post 6: Apa itu Attribute, Entitas dan Relasi dalam ERD</h2>
+
+        <p>
+            <strong>ERD (Entity Relationship Diagram)</strong> adalah diagram yang digunakan untuk menggambarkan struktur logis dari basis data.
+            ERD membantu kita memahami bagaimana data saling berhubungan satu sama lain sebelum dibuat ke dalam bentuk tabel di DBMS.
+        </p>
+
+        <h3>1. Entitas</h3>
+        <p>
+            Entitas adalah <strong>objek utama</strong> yang datanya akan disimpan di dalam database.
+            Entitas bisa berupa orang, tempat, benda, atau kejadian yang relevan dengan sistem yang dirancang.
+        </p>
+        <p><u>Contoh:</u> Dalam sistem akademik, entitas yang bisa digunakan antara lain <em>Mahasiswa</em>, <em>Dosen</em>, dan <em>Mata Kuliah</em>.</p>
+
+        <h3>2. Atribut</h3>
+        <p>
+            Atribut adalah <strong>ciri-ciri atau informasi</strong> yang menjelaskan suatu entitas.
+            Setiap entitas memiliki sejumlah atribut yang mendeskripsikan data di dalamnya.
+        </p>
+        <p><u>Contoh:</u> Entitas <em>Mahasiswa</em> bisa memiliki atribut seperti <em>NIM</em>, <em>Nama</em>, <em>Alamat</em>, dan <em>Jurusan</em>.</p>
+        <p>
+            Atribut juga memiliki jenis, di antaranya:
+            <ul>
+                <li><strong>Atribut Kunci (Primary Key)</strong>: atribut unik yang menjadi identitas tiap data, misalnya <em>NIM</em>.</li>
+                <li><strong>Atribut Biasa</strong>: atribut umum seperti <em>Nama</em> atau <em>Alamat</em>.</li>
+                <li><strong>Atribut Gabungan</strong>: atribut yang terdiri dari beberapa bagian, seperti <em>Nama Lengkap</em> (gabungan Nama Depan dan Nama Belakang).</li>
+            </ul>
+        </p>
+
+        <h3>3. Relasi</h3>
+        <p>
+            Relasi adalah <strong>hubungan antar entitas</strong> yang menunjukkan bagaimana data saling terhubung.
+            Relasi ditunjukkan dengan garis penghubung antar entitas di dalam diagram ERD.
+        </p>
+        <p><u>Contoh:</u> Entitas <em>Mahasiswa</em> dan <em>Mata Kuliah</em> memiliki relasi <em>“mengambil”</em>, artinya satu mahasiswa bisa mengambil banyak mata kuliah.</p>
+        <p>
+            Relasi juga memiliki jenis:
+            <ul>
+                <li><strong>One to One (1:1)</strong>: satu entitas berhubungan dengan satu entitas lain. Contoh: satu dosen punya satu ruang kerja.</li>
+                <li><strong>One to Many (1:N)</strong>: satu entitas berhubungan dengan banyak entitas lain. Contoh: satu dosen mengajar banyak mahasiswa.</li>
+                <li><strong>Many to Many (M:N)</strong>: banyak entitas saling berhubungan. Contoh: banyak mahasiswa mengambil banyak mata kuliah.</li>
+            </ul>
+        </p>
+
+        <p>
+            <a href="post5.html">← Previous</a> |
+            <a href="index.html" class="back">Kembali ke Beranda</a>
+            <a href="post7.html">Next →</a>
+        </p>
+    </main>
+
+    <footer>
+        <p>Diposting oleh Stefanus Krisna • 7 Oktober 2025</p>
+    </footer>
+</body>
+</html>
