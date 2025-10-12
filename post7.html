@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post 7 - Primary Key, Foreign Key, dan Candidate Key</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>BASIC DATA</h1>
+</header>
+
+<main>
+    <h2>Post 7: Apa itu Primary Key, Foreign Key dan Candidate Key</h2>
+
+    <p><strong>1. Primary Key</strong> adalah atribut unik yang digunakan untuk membedakan setiap record di dalam tabel. 
+    Tidak boleh ada nilai yang sama atau kosong.</p>
+
+    <p><u>Contoh penerapan di ERD:</u></p>
+    <ul>
+        <li>Tabel Mahasiswa → NIM</li>
+        <li>Tabel Dosen → NIP</li>
+        <li>Tabel Barang → Kode_Barang</li>
+        <li>Tabel Pegawai → ID_Pegawai</li>
+        <li>Tabel Buku → Kode_Buku</li>
+    </ul>
+
+    <p><strong>2. Foreign Key</strong> adalah atribut yang menjadi penghubung antara dua tabel dan menunjuk ke Primary Key tabel lain.</p>
+
+    <p><u>Contoh penerapan di ERD:</u></p>
+    <ul>
+        <li>Tabel Transaksi → NIM (mengacu ke tabel Mahasiswa)</li>
+        <li>Tabel Nilai → Kode_MK (mengacu ke tabel Mata_Kuliah)</li>
+        <li>Tabel Penjualan → ID_Pegawai (mengacu ke tabel Pegawai)</li>
+        <li>Tabel Pinjam → Kode_Buku (mengacu ke tabel Buku)</li>
+        <li>Tabel Kelas → NIP (mengacu ke tabel Dosen)</li>
+    </ul>
+
+    <p><strong>3. Candidate Key</strong> adalah atribut yang dapat dijadikan sebagai Primary Key karena memiliki nilai unik, 
+    namun hanya satu yang dipilih sebagai Primary Key.</p>
+
+    <p><u>Contoh penerapan di ERD:</u></p>
+    <ul>
+        <li>Tabel Mahasiswa → {NIM, Email}</li>
+        <li>Tabel Dosen → {NIP, No_HP}</li>
+        <li>Tabel Pegawai → {ID_Pegawai, No_KTP}</li>
+        <li>Tabel Pelanggan → {ID_Pelanggan, Email}</li>
+        <li>Tabel Barang → {Kode_Barang, Barcode}</li>
+    </ul>
+
+    <p>
+        <a href="post6.html">← Previous</a> |
+        <a href="index.html" class="back">Kembali ke Beranda</a> |
+        <a href="post8.html">Next →</a>
+    </p>
+</main>
+
+<footer>
+    <p>Diposting oleh Stefanus Krisna • 13 Oktober 2025</p>
+</footer>
+</body>
+</html>
